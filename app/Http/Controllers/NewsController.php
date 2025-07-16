@@ -51,7 +51,7 @@ class NewsController
         ];
 
         // Cuaca
-        $weatherApiKey = 'a2ff8f4b255d49f886153111252005';
+        $weatherApiKey = getenv('WEATHER_API_KEY'); 
         $city = 'Jakarta';
         $weatherUrl = "http://api.weatherapi.com/v1/current.json?key=$weatherApiKey&q=" . urlencode($city) . "&aqi=no";
 

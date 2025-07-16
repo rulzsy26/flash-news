@@ -28,11 +28,6 @@
                 @error('email')
                     <div class="text-danger small mb-2">{{ $message }}</div>
                 @enderror
-                <div class="text-end">
-                    <a href="{{ route('password.request') }}" class="small text-primary text-decoration-none">Lupa
-                        Password?</a>
-                </div>
-
                 <div class="d-grid mb-2">
                     <button type="submit" class="btn btn-outline-dark btn-lg mt-2">Masuk</button>
                 </div>

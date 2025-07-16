@@ -10,7 +10,7 @@ class NewsApiService
 
     public function __construct()
     {
-        $this->apiKey = '1fb42fb4b7984ec082a43ec7526516c1';
+        $this->apiKey = getenv('NEWS_API_KEY');
     }
 
     public function getTopHeadlines($category = null, $pageSize = 10)
@@ -58,7 +58,7 @@ class NewsApiService
         return $response->json();
     }
 
-    public function getNewsByCategory($category, $pageSize = 100 , $page = 2)
+    public function getNewsByCategory($category, $pageSize = 100, $page = 2)
     {
         return $this->getTopHeadlines($category, $pageSize);
     }
