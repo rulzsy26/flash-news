@@ -31,8 +31,7 @@
                 <div class="d-grid mb-2">
                     <button type="submit" class="btn btn-outline-dark btn-lg mt-2">Masuk</button>
                 </div>
-
-
+                
                 <div class="text-center mt-4">
                     <span class="normal">Belum punya akun? <a href="{{ route('register') }}"
                             class="text-primary text-decoration-none">Buat Akun</a></span>

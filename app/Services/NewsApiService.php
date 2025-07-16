@@ -42,7 +42,6 @@ class NewsApiService
         return $response->json();
     }
 
-
     public function getEverything($query, $pageSize = 10, $page = 1)
     {
         $endpoint = $this->baseUrl . '/everything';

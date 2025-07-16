@@ -54,7 +54,6 @@ class NewsController
         $weatherApiKey = getenv('WEATHER_API_KEY'); 
         $city = 'Jakarta';
         $weatherUrl = "http://api.weatherapi.com/v1/current.json?key=$weatherApiKey&q=" . urlencode($city) . "&aqi=no";
-
         try {
             $weatherResponse = file_get_contents($weatherUrl);
             $weatherData = json_decode($weatherResponse, true);
