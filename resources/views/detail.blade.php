@@ -66,7 +66,7 @@
             {{-- Sidebar --}}
             <div class="col-lg-4">
                 <div class="mb-4">
-                    <h5 class="fw-bold border-bottom pb-2">Berita Terbaru</h5>
+                    <h5 class="fw-bold border-bottom pb-2">Berita Lainnya</h5>
                     @foreach (array_slice($latestNews['articles'] ?? [], 0, 3) as $newsItem)
                         @if (is_array($newsItem))
                             <div class="d-flex mb-3">
