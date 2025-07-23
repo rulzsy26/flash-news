@@ -40,19 +40,25 @@
             <!-- Sidebar -->
             <div class="col-md-4 mb-3">
                 <!-- Weather Widget -->
-                <div class="weather-widget text-center mb-4">
-                    <h5>{{ $weather['location'] }}</h5>
-                    <p class="text-muted">{{ $weather['city'] }}</p>
-                    <p>{{ $weather['date'] }}</p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="me-3">
-                            <i class="{{ $weather['icon'] }}" style="font-size: 3rem;"></i>
-                        </div>
-                        <div>
-                            <h2 class="mb-0">{{ $weather['temperature'] }}</h2>
+                @if ($weather)
+                    <div class="weather-widget text-center mb-4">
+                        <h5>{{ $weather['location'] }}</h5>
+                        <p class="text-muted">{{ $weather['city'] }}</p>
+                        <p>{{ $weather['date'] }}</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="me-3">
+                                <i class="{{ $weather['icon'] }}" style="font-size: 3rem;"></i>
+                            </div>
+                            <div>
+                                <h2 class="mb-0">{{ $weather['temperature'] }}</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @else
+                    <div class="text-center text-muted mb-4">
+                        <p>Data cuaca tidak tersedia saat ini.</p>
+                    </div>
+                @endif
 
                 <!-- Popular Categories -->
                 <div>
