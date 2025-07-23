@@ -208,7 +208,7 @@
                 <div class="col-md-3">
                     <h5>Tentang</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a class="nav-link" href="{{ route('tentang') }}">Tentang Kami</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
